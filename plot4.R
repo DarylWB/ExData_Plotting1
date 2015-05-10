@@ -15,3 +15,6 @@ with(dataSub, points(DateTime , as.numeric(as.character(Sub_metering_3)),type="l
 legend("topright", col = c("black", "red", "blue"),lty=c(1,1,1), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3") , cex=0.8, bty="n" )
 
 with(dataSub, plot(DateTime , as.numeric(as.character(Global_reactive_power)), type="l", xlab="datetime", ylab="Global_reactive_power"))
+
+dev.print(png, file = "plot4.png", width = 480, height = 480) 
+dev.off()
